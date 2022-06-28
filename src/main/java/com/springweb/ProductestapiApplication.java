@@ -8,6 +8,4 @@ public class ProductestapiApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(ProductestapiApplication.class, args);
-	}
-
-}
+	}  
