@@ -30,6 +30,10 @@ public class ProductRestController {
 	@RequestMapping (value="/products/get/{id}",method=RequestMethod.GET)
 	public Product getProduct(@PathVariable("id")int id) {
 		log.info("you r in getProduct with id "+id);
+		if(id==2) {
+			log.error("Error occured.......");
+			log.warn("Warning occured..........");
+		}
 		return repository.findById(id).get();
 		
 	}
