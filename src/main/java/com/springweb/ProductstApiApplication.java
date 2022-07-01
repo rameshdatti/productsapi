@@ -10,6 +10,6 @@ import org.springframework.cache.annotation.EnableCaching;
 public class ProductstApiApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ProductstApiApplication.class, args);     
+		SpringApplication.run(ProductstApiApplication.class, args);      
 	}  
 }
