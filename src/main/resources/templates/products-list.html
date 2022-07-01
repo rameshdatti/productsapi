@@ -1,0 +1,25 @@
+<!doctype html>
+<html xmlns:th="https://www.thymeleaf.org/">
+<head>
+	<title data-rh="true">Spring Company</title>
+</head>
+<body>
+<h1>Prouducts List</h1>
+
+<table>
+	<tr>
+		<th>ID</th>
+		<th>Name</th>
+		<th>Description</th>
+		<th>Price</th>
+	</tr>
+	<tr th:each="product:${productsData}">
+		<td th:text="${product.id}"></td>
+		<td th:text="${product.name}"></td>
+		<td th:text="${product.description}"></td>
+		<td th:text="${product.price}"></td>
+	</tr>
+</table>
+
+</body>
+</html>

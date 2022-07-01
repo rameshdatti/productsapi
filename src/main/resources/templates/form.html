@@ -1,0 +1,19 @@
+<!doctype html>
+<html xmlns:th="https://www.thymeleaf.org/">
+<head>
+	<title data-rh="true">Spring Company</title>
+</head>
+<body>
+<h1>Welcome Revathi !!!!</h1>
+
+<form>
+	User Name : <input type="text" name="name" th:value="${uname}" />
+	Password : <input type="text" name="name" th:value="${upass}"  />
+	<p th:text="${paraData}"></p>
+	<button  type="button" >Login</button >
+</form>
+
+Product Details :
+	Name : <b th:text="${productData.get().name}"></b>
+</body>
+</html>

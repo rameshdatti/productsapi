@@ -1,0 +1,16 @@
+<!doctype html>
+<html xmlns:th="https://www.thymeleaf.org/">
+<head>
+	<title data-rh="true">Spring Company</title>
+</head>
+<body>
+<h1>Product Creation Form</h1>
+	<form th:action="@{/saveProduct}" th:object="${productData}">
+		<input type="text" th:field="*{name}" />
+		<input type="text" th:field="*{description}" />
+		<input type="text" th:field="*{price}" />
+		<input type="submit" value="Save" />
+		<input type="reset" value="Reset" />
+	</form>
+</body>
+</html>
